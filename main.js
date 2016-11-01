@@ -2,8 +2,9 @@
 console.log("main.js is connected");
 
 //selecting #gameBoard within the DOM
-var gameBoard =(querySelectorAll('#gameBoard'));
-
+var gameBoard = document.querySelectorAll('#gameBoard');
+console.log(gameBoard);
+gameBoard.addEventListener("click", clickACard);
 //setting card variables
 var cardOne = "Queen";
 var cardTwo = "King";
@@ -21,14 +22,13 @@ var cardFour = "Queen";
 // }
 
 //setting click function
-var clickACard = function ("click"){
 
-	if click(cardOne == cardTwo || cardThree == cardFour){
+var clickACard = function (){
+
+	if (cardOne == cardTwo || cardThree == cardFour){
 	alert("Try again");
 	}
-	else if click(cardOne == cardFour || cardTwo == cardThree){
+	else if (cardOne == cardFour || cardTwo == cardThree){
 	alert("You found a match!");
 	}
-
-  }
-}
+};
