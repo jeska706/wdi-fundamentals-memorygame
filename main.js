@@ -1,25 +1,27 @@
 //confirmation on connection
 console.log("main.js is connected");
 
-//selecting #gameBoard within the DOM
-var gameBoard = document.querySelectorAll('#gameBoard');
+//4 ) Get an element with the id of game-board and set it to a variable
+var gameBoard = document.getElementById('gameBoard');
 console.log(gameBoard);
-gameBoard.addEventListener("click", clickACard);
+
+
+
 //setting card variables
 var cardOne = "Queen";
 var cardTwo = "King";
 var cardThree = "King";
 var cardFour = "Queen";
 
-// var cardValue = function(key){
-// 	switch(key){
-// 		case "cardOne": return Queen;
-// 		case "cardTwo": return King;
-// 		case "cardThree": return King;
-// 		case "cardFour": return Queen;
-// 		default: return null;
-// 	}
-// }
+//setting for loop
+for (var i = 0; i < 4; i++){
+		var cards = document.createElement("div");
+		console.log(cards);
+		cards.classList.add("card");
+		gameBoard.appendChild(cards);
+};
+
+
 
 //setting click function
 
