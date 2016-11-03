@@ -1,11 +1,6 @@
-//confirmation on connection
-console.log("main.js is connected");
 
-//4 ) Get an element with the id of game-board and set it to a variable
+//4 ) Got an element with the id of game-board and set it to a variable
 var gameBoard = document.getElementById('gameBoard');
-console.log(gameBoard);
-
-
 
 //setting card variables
 var cardOne = "Queen";
@@ -21,11 +16,19 @@ for (var i = 0; i < 4; i++){
 		gameBoard.appendChild(cards);
 };
 
+//declaring variable whose value is an array
+var cardNumber = ["Queen", "King", "King", "Queen"];
 
+//declaring a variable whose value is an empty array
+var cardsInPlay = [];{
+ cardNumber
+}
+for (var i = 0; i < cardNumber.length; i++){
+}
 
-//setting click function
-
+//function that will trigger when event occurs
 var clickACard = function (){
+cardNumber.addEventListener("data-card", cardNumber[i]);
 
 	if (cardOne == cardTwo || cardThree == cardFour){
 	alert("Try again");
@@ -34,3 +37,15 @@ var clickACard = function (){
 	alert("You found a match!");
 	}
 };
+
+//Adding event listener
+for (var i = 0; i < cardNumber.length; i++){
+gameBoard.addEventListener("click", clickACard);
+}
+isTwoCards =function () {
+	cardsInPlay.push(this.click("data-card"));
+		if (cardsInPlay.length ===2){
+			isMatch(cardsInPlay);
+			cardsInPlay = [];
+		}
+}
